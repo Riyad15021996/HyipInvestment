@@ -1,0 +1,164 @@
+/* google fonts */
+
+@mixin primary-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin heading-font {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* background qu */
+
+@mixin bg-prs {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* background qu */
+
+@mixin box-shadow {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+@mixin bottom-shadow {
+    box-shadow: 0 46px 60px rgba(99, 99, 99, 0.4);
+    -webkit-box-shadow: 0 46px 60px rgba(99, 99, 99, 0.4);
+    -moz-box-shadow: 0 46px 60px rgba(99, 99, 99, 0.4);
+}
+
+@mixin inner-shadow2 {
+    box-shadow: 5px 5px 49px rgba(0, 0, 0, 0.3) inset;
+    -webkit-box-shadow: 5px 5px 49px rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 5px 5px 49px rgba(0, 0, 0, 0.3) inset;
+}
+
+@mixin inner-shadow {
+    box-shadow: 5px 5px 38px rgba(171, 171, 171, 0.5) inset;
+    -webkit-box-shadow: 5px 5px 38px rgba(171, 171, 171, 0.5) inset;
+    -moz-box-shadow: 5px 5px 38px rgba(171, 171, 171, 0.5) inset;
+}
+
+
+/* center position */
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin pocenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*  box */
+
+@mixin box30 {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+@mixin box35 {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+@mixin box40 {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+@mixin box50 {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+@mixin box60 {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+
+@mixin box70 {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+
+@mixin box80 {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+@mixin box90 {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+}
+
+@mixin box100 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+@mixin box150 {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+
+/* before after */
+
+@mixin beforeafter {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+@mixin beforeafter2 {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Font Awesome */
+
+@mixin icon-font {
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+
+/* Line Awesome */
+
+@mixin line-font {
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    margin-right: 10px;
+}
