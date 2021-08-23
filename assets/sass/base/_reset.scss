@@ -87,12 +87,6 @@ table {
     animation: fade-effect 1s;
 }
 
-.section-shapes {
-    background-image: url(/assets/img/section-shape.png);
-    @include bg-prs;
-    z-index: -1;
-}
-
 .common-title {
     font-size: 24px;
     transition: all .3s;
