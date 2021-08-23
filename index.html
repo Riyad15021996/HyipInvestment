@@ -83,10 +83,12 @@
                             <li class="nav-item"><a class="nav-link" href="#plan">Plan</a></li>
                             <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
-                            <div class="login-button d-lg-none mt-30">
-                                <a href="#0" class="btn--base btn--custom">Log In</a>
-                                <a href="#0" class="btn-outline--base btn--custom ml-20">Register</a>
-                            </div>
+                            <li>
+                                <div class="login-button d-lg-none mt-30">
+                                    <a href="#0" class="btn--base btn--custom">Log In</a>
+                                    <a href="#0" class="btn-outline--base btn--custom ml-20">Register</a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="login-button d-none d-lg-block">
@@ -387,12 +389,14 @@
                             <h6 class="invest-capital">Capital Will Return Back</h6>
                             <p class="common-para">24/7Support</p>
                         </div>
-                        <ul class="investment-bottom">
-                            <li> <i class="las la-check-circle"></i> Min Investment: $50 </li>
-                            <li> <i class="las la-check-circle"></i> Max Investment: $1000 </li>
-                            <li> <i class="las la-check-circle"></i> Daily Withdraw 10 times </li>
+                        <div class="investment-bottom">
+                            <ul class="investment-lists">
+                                <li> <i class="las la-check-circle"></i> Min Investment: $50 </li>
+                                <li> <i class="las la-check-circle"></i> Max Investment: $1000 </li>
+                                <li> <i class="las la-check-circle"></i> Daily Withdraw 10 times </li>
+                            </ul>
                             <a href="#" class="btn--custom btn--base">Invest Now</a>
-                        </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mt-30">
@@ -404,12 +408,14 @@
                             <h6 class="invest-capital">Capital Will Return Back</h6>
                             <p class="common-para">24/7Support</p>
                         </div>
-                        <ul class="investment-bottom">
-                            <li> <i class="las la-check-circle"></i> Min Investment: $50 </li>
-                            <li> <i class="las la-check-circle"></i> Max Investment: $1000 </li>
-                            <li> <i class="las la-check-circle"></i> Daily Withdraw 10 times </li>
+                        <div class="investment-bottom">
+                            <ul class="investment-lists">
+                                <li> <i class="las la-check-circle"></i> Min Investment: $50 </li>
+                                <li> <i class="las la-check-circle"></i> Max Investment: $1000 </li>
+                                <li> <i class="las la-check-circle"></i> Daily Withdraw 10 times </li>
+                            </ul>
                             <a href="#" class="btn--custom btn--base">Invest Now</a>
-                        </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mt-30">
@@ -421,12 +427,14 @@
                             <h6 class="invest-capital">Capital Will Return Back</h6>
                             <p class="common-para">24/7Support</p>
                         </div>
-                        <ul class="investment-bottom">
-                            <li> <i class="las la-check-circle"></i> Min Investment: $50 </li>
-                            <li> <i class="las la-check-circle"></i> Max Investment: $1000 </li>
-                            <li> <i class="las la-check-circle"></i> Daily Withdraw 10 times </li>
+                        <div class="investment-bottom">
+                            <ul class="investment-lists">
+                                <li> <i class="las la-check-circle"></i> Min Investment: $50 </li>
+                                <li> <i class="las la-check-circle"></i> Max Investment: $1000 </li>
+                                <li> <i class="las la-check-circle"></i> Daily Withdraw 10 times </li>
+                            </ul>
                             <a href="#" class="btn--custom btn--base">Invest Now</a>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -455,7 +463,7 @@
             <div class="row calculator-bg bg--base">
                 <div class="col-lg-4 col-sm-6 mt-30">
                     <div class="single-calculator">
-                        <label for="label">Invest Plan</label>
+                        <label>Invest Plan</label>
                         <div class="calculator-select">
                             <select>
                                 <option value="1">Choose Plan</option>
@@ -468,7 +476,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 mt-30">
                     <div class="single-calculator">
-                        <label for="label">Invest Amount</label>
+                        <label>Invest Amount</label>
                         <form class="custom--form" action="#">
                             <input class="form--control" type="text" placeholder="0.00">
                         </form>
@@ -476,7 +484,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 mt-30">
                     <div class="single-calculator">
-                        <label for="label">Profit</label>
+                        <label>Profit</label>
                         <form class="custom--form" action="#">
                             <input class="form--control" type="text" placeholder="0.00">
                         </form>
@@ -870,6 +878,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- =====>> End Faq <<===== 
     =========================== -->
