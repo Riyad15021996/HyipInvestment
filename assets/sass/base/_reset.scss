@@ -1,0 +1,450 @@
+/*=========================================================
+    [ Reset ]
+=========================================================*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+    color: #474747;
+    font-weight: 300;
+    font-size: 16px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+
+body::-webkit-scrollbar,
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb {
+    background-color: #8264e6;
+    border-radius: 0px;
+}
+
+ ::-moz-selection {
+    background: #ffc107;
+    color: #fff
+}
+
+ ::selection {
+    background: #ffc107;
+    color: #fff
+}
+
+ ::-moz-selection {
+    background: #ffc107;
+    color: #fff
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+input[type="number"] {
+    width: 100%;
+}
+
+button:focus {
+    outline: none;
+}
+
+button {
+    border: 0;
+    outline: 0;
+}
+
+textarea {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*=========================================================
+    [ Common style ]
+=========================================================*/
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: inherit;
+    animation: fade-effect 1s;
+}
+
+.common-title {
+    font-size: 24px;
+    transition: all .3s;
+    @include responsive(sm) {
+        font-size: 20px;
+    }
+    @include responsive(xs) {
+        font-size: 20px;
+    }
+    a {
+        color: inherit;
+        background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 100% / 0px 2px no-repeat;
+        transition: all .5s;
+        &:hover {
+            background-size: 100% 2px;
+        }
+    }
+}
+
+.common-para {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    transition: all .3s;
+    @include responsive(lg) {
+        font-size: 14px;
+    }
+    @include responsive(allPhone) {
+        font-size: 14px;
+    }
+}
+
+.btn--single {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.hover-div {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: all .4s;
+}
+
+.hover-div:hover .hover-dir {
+    display: block;
+}
+
+.hover-dir {
+    color: #ffffff;
+    position: absolute;
+    background: #21333e;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.counts {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.bg--hover {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bg--hover::before,
+.bg--hover::after {
+    @include beforeafter;
+    top: -100%;
+    left: 100%;
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.bg--hover::before {
+    background: #058283;
+}
+
+.bg--hover::after {
+    background: #00a0a0;
+}
+
+.bg--hover:hover::before,
+.bg--hover:hover::after {
+    top: 0;
+    left: 0;
+}
+
+.bg--hover:hover::after {
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+@media screen and (min-width: 320px) and (max-width: 991px) {
+    .pt-90 {
+        padding-top: 50px !important;
+    }
+    .pt-120 {
+        padding-top: 80px !important;
+    }
+    .pb-120 {
+        padding-bottom: 80px !important;
+    }
+    .pb-240 {
+        padding-bottom: 80px !important;
+    }
+    .section-head {
+        font-size: 18px;
+    }
+    .section-heading::before,
+    .section-heading::after {
+        display: none;
+    }
+    .section-heading {
+        font-size: 28px !important;
+    }
+    .section-title.text-left .section-heading {
+        font-size: 23px !important;
+    }
+    .section-paragraph {
+        font-size: 15px !important;
+    }
+    br {
+        display: none;
+    }
+    .single-heading {
+        font-size: 20px;
+    }
+    .single-paragraph {
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section-heading {
+        font-size: 25px !important;
+    }
+    .section-head {
+        font-size: 16px !important;
+    }
+    .common-title {
+        font-size: 21px;
+    }
+}
+
+
+/*=========================================================
+    [ margin & padding ]
+=========================================================*/
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pt-90 {
+    padding-top: 90px;
+}
+
+.pb-90 {
+    padding-bottom: 90px;
+}
+
+.pt-120 {
+    padding-top: 120px;
+}
+
+.pb-120 {
+    padding-bottom: 120px;
+}
+
+
+/*=========================================================
+    [ Section ]
+=========================================================*/
+
+.section-title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.section-title.text-left {
+    text-align: left;
+}
+
+.section-title.text-left {
+    .section-head {
+        margin: 0 0 25px
+    }
+}
+
+.section-title.text-left {
+    .section-heading {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.section-title.white-color {
+    color: $text--white;
+}
+
+.section-title.white-color {
+    .section-head {
+        color: $text--white;
+    }
+}
+
+.section-title.white-color {
+    .section-heading {
+        color: $text--white;
+    }
+}
+
+.section-title.white-color {
+    .section-heading {
+        &::before,
+        &::after {
+            color: $text--white;
+        }
+    }
+}
+
+.section-head {
+    font-size: 18px;
+    color: $text--base;
+    text-transform: uppercase;
+    display: table;
+    margin: 0 auto 25px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-heading {
+    font-size: 40px;
+    font-weight: 600;
+    color: #232323;
+    line-height: 1.2;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    span {
+        color: $text--base;
+    }
+}
+
+.white-color {
+    .section-heading {
+        &::before {
+            border-color: $bg--white;
+        }
+    }
+}
+
+.section-title.text-left {
+    .section-heading {
+        font-size: 32px;
+    }
+}
+
+.section-paragraph {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: inherit;
+    margin-top: 20px;
+}
+
+.section-border {
+    height: 3px;
+    width: 120px;
+    background: $bg--Clay;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    margin: 30px auto;
+}
+
+.section-border {
+    &::after {
+        position: absolute;
+        content: '';
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        background: $bg--base;
+        margin: -4px auto 0;
+        left: 0;
+        -webkit-animation: watermark-animate 8s infinite;
+        animation: watermark-animate 8s infinite;
+        animation-direction: alternate-reverse;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+.section-border2 {
+    height: 3px;
+    width: 150px;
+    background: $bg--base;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    margin: 30px auto;
+}

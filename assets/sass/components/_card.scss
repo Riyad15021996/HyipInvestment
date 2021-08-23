@@ -1,0 +1,26 @@
+/*=========================================================
+          [ Card Style ]
+=========================================================*/
+
+.custom--card {
+    position: relative;
+    border: 1px solid #00000020;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.custom--card img {}
+
+.custom--card .card-body {}
+
+.custom--card .card-title {
+    margin: 5px 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.custom--card .card-text {
+    font-size: 16px;
+    font-weight: 400;
+}

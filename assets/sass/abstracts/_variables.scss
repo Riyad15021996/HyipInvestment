@@ -1,0 +1,74 @@
+/* 
+******* Variables 
+*/
+
+// Colors
+$text--base: #8264e6;
+$text--main: #232323;
+$text--Persian: #00a0a0;
+$text--Clay:#0f0d1d;
+$text--marino: #3f51b5;
+$text--purple: #660099;
+$text--black: #000;
+$text--white: #fff;
+$text--primary: #007bff;
+$text--secondary: #6c757d;
+$text--success: #28a745;
+$text--danger: #dc3545;
+$text--warning: #ffc107;
+$text--info: #17a2b8;
+$text--light: #e2e6ea;
+$text--dark: #26292c;
+// btn-color
+$btn--base:#8264e6;
+$btn--Persian:#00a0a0;
+$btn--marino:#3f51b5;
+$btn--Clay:#0f0d1d;
+$btn--purple:#660099;
+$btn--primary: #007bff;
+$btn--secondary: #6c757d;
+$btn--success: #28a745;
+$btn--danger: #dc3545;
+$btn--warning: #ffc107;
+$btn--info: #17a2b8;
+$btn--light: #e2e6ea;
+$btn--white: #fff;
+$btn--dark: #26292c;
+$btn--black: #000;
+// Gradient background
+$gradient-base: linear-gradient(90deg, rgba(0, 59, 165, 0.6110819327731092) 0%, rgba(0, 59, 165, 1) 100%);
+$gradient-purple: linear-gradient(90deg, rgba(101, 45, 193, 1) 0%, rgba(102, 0, 153, 0.9864320728291317) 100%);
+$gradient-hover: linear-gradient(135deg, rgba(204, 171, 0, 1) 0%, rgba(0, 187, 138, 1) 100%);
+// background
+$bg--common:#17677f;
+$bg--base:#8264e6;
+$bg--Persian: #00a0a0;
+$bg--marino: #3f51b5;
+$bg--Clay:#0f0d1d;
+$bg--purple:#660099;
+$bg--primary: #007bff;
+$bg--black: #000;
+$bg--white: #fff;
+$bg--green: #5cd901;
+$bg--secondary: #6c757d;
+$bg--success: #28a745;
+$bg--danger: #dc3545;
+$bg--warning: #ffc107;
+$bg--info: #17a2b8;
+$bg--light: #e2e6ea;
+$bg--dark: #26292c;
+$bg--section: #f7f7f7;
+$bg--footer: #002f5fad;
+// background opacity
+$opc--black: rgba(0, 0, 0, 0.7);
+$opc--white: rgba(255, 255, 255, 0.6);
+$opc--clay: rgba(15, 13, 29, 0.7);
+$opc--base:rgba(130, 100, 230, 0.7);
+$opc2--base:rgba(130, 100, 230, 0.2);
+$opc--warning:rgba(255, 193, 7, 0.7);
+$opc--Persian:rgba(0, 160, 160, 0.6);
+$opc--marino:rgba(63, 81, 181, 0.65);
+$opc--info: rgba(23, 163, 184, 0.6);
+$opc--purple: rgba(102, 0, 153, 0.6);
+$opc--success: rgba(40, 167, 70, 0.6);
+$opc--common: rgba(23, 103, 127, 0.7)
